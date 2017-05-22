@@ -6,22 +6,13 @@
 
 	// Database Login Information
 	
-	$db_host		= "localhost";
+	$db_host	= "localhost";
 	$db_username	= "root";
 	$db_password	= "";
-	$db_name 		= "waifai.tk";
+	$db_name 	= "waifai.tk";
 
 	// Port API MikroTik
 	$port			= "8728";
-	
-
-	// Database Login Information idHostinger
-	/*
-	$db_host		= "mysql.idhostinger.com";
-	$db_username	= "u632080757_net";
-	$db_password	= "t16net";
-	$db_name 		= "u632080757_t16";
-	*/
 
 	// Create and Check Connection
 	$conn = new mysqli($db_host, $db_username, $db_password, $db_name);
