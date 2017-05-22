@@ -66,12 +66,13 @@
 
 	function getRouterInfo($id_admin){
 		$info 		= getRouterLogin($id_admin);
+		global 		$port;
 		$host 		= $info['host'];
 		$username 	= $info['username'];
 		$password 	= $info['password'];
 
 		try {
-		    $util = new RouterOS\Util($client = new RouterOS\Client($host, $username, $password));
+		    $util = new RouterOS\Util($client = new RouterOS\Client($host, $username, $password, $port));
 
 		    foreach ($util->setMenu('/system/resource')->getAll() as $entry) {
 		    	// router info

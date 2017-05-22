@@ -10,6 +10,9 @@
 	$db_username	= "root";
 	$db_password	= "";
 	$db_name 		= "waifai.tk";
+
+	// Port API MikroTik
+	$port			= "8728";
 	
 
 	// Database Login Information idHostinger
